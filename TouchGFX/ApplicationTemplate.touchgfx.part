@@ -1,0 +1,20 @@
+
+{
+  "Application": {
+    "Name": "MyProject",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "AvailableColorDepths": [ 24 ],
+    "AvailableLCDs":
+    {
+      "24": "LCD24bpp"
+    },
+    "AvailableResolutions" : [
+      {
+        "Width": 480,
+        "Height": 272
+      }
+    ],
+    "PostGenerateTargetCommand" : "touchgfx update_project --project-file=../MyProject.ioc --platform=m7"
+  },
+  "Version": "4.13.0"
+}
